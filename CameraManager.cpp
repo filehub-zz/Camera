@@ -6,7 +6,8 @@ CameraManager::CameraManager()
 	
 	count = -1;
 	tucam = new Tucam();
-	this->Add(tucam);
+	//this->Add(tucam);
+	//what i do here
 }
 
 
@@ -21,7 +22,8 @@ CameraManager::~CameraManager()
 
 int CameraManager::Add(Camera &item)
 {
-	this->cameras.push_back(new Camera(item);
+	//what i do here
+	//this->cameras.push_back(new );
 	//cameras.push_back(item);
 	count++;
 	return count;
