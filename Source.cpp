@@ -6,16 +6,10 @@
 #include "CameraManager.h"
 int main()
 {
-	//Tucam tucam;
 	CameraManager cameras;
 	Camera* t = new Tucam();
-	cameras.Add(t);
-	t->settest2("No");
-
-	//std::cout << t->gettest2()<<"\n";
-	delete t;
+	std::cout << t<<"\n";
+	cameras.Add(t);	
 	return 0;
 	
 }
-
-	
