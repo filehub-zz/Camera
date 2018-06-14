@@ -3,11 +3,11 @@
 
 CameraManager::CameraManager()
 {
-	
+
 	count = -1;
-	tucam = new Tucam();
+	//tucam = new Tucam();
 	//this->Add(tucam);
-	//what i do here
+
 }
 
 
@@ -20,11 +20,10 @@ CameraManager::~CameraManager()
 }
 
 
-int CameraManager::Add(Camera &item)
+int CameraManager::Add(Camera *item)
 {
-	//what i do here
-	//this->cameras.push_back(new );
-	//cameras.push_back(item);
+	cameras.push_back(item);	
+	std::cout << item << "\n";
 	count++;
 	return count;
 }
